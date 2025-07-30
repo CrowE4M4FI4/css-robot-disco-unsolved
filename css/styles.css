@@ -1,41 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   background-color: #21222c;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-/* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
+.content-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+
+.exercise {
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.exercise h3 a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.exercise p {
+  line-height: 24px;
+}
+
 
 .robot-container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border: 15px;
+    padding: 50px;
 }
 
-.robot-face-shape {
-}
+ .robot-face-shape {
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    border-color: #ff0000;
+    margin: 5px;
+    padding: 25px;
+    background-image: url(https://fastly.picsum.photos/id/1/500/500.jpg?hmac=6vo7WkHURh9CWfdf144ASqEaPNcbj2PHJK3UgGH24lM);
+    opacity: 0.25;
+  } 
 
 .robot-eye-left {
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ background-color: rgb(195, 0, 255);
+ position: sticky;
+ margin: 100px;
+ 
 }
 
 .robot-eye-right {
+    width: 50px;
+ height: 50px;
+ border-radius: 10%;
+ background-color: blue;
+ position: relative;
+ top: -150px;
+ left: 65%;
 }
 
 .robot-ear-left {
+    width: 100px;
+    height: 200px;
+    border-radius: 50px/100px;
+    background: conic-gradient(#ff0000,#ff9900,#ffff00,#00ff00,#0000ff,#cc00ff);
+    position: absolute;
+    top: 350px;
+    left: 630px;
+    transform: rotate(-20deg);
 }
 
 .robot-ear-right {
+    width: 100px;
+    height: 200px;
+    border-radius: 50px/100px;
+    background: radial-gradient(#ff0066, #00b36b);
+    position: absolute;
+    top: 350px;
+    left: 81rem;
+    transform: rotate(20deg);
 }
 
 .robot-nose {
-}
-
-.robot-nose:before {
-}
-
-.robot-nose:after {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+      position: relative;
+      top: -30%;
+      left: 40%;
 }
 
 .robot-teeth {
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;
+    position: relative;
+    top: -10%;
+    left: 120px;
 }
 
 .robot-tooth {
+    height: 25px;
+    width: 25px;
+    background-color: goldenrod;
+    position: relative;
+    left: 110px;
+    border-radius:0% 0% 25% 25%;
 }
 
 .robot-hair-style {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    position: relative;
+    top: -40rem;
+}
+
+.robot-hair-one {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(225, 0, 255);
+    position: relative;
+    top: 0px;
+    left: 47px;
+
+}
+
+.robot-hair-two {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(0, 255, 170);
+    position: relative;
+    top: -100px;
+    left: 145px;
+}
+
+.robot-hair-two-two {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(251, 255, 0);
+    position: relative;
+    top: -300px;
+    left: 243px;
+}
+
+.robot-hair-three {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid grey;
+    position: relative;
+    top: 450px;
+    left: 150px;
+}
+
+.robot-hair-one-two {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(23, 192, 204);
+    position: relative;
+    top: -400px;
+    left: 340px;
 }
