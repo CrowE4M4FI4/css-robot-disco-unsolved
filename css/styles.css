@@ -66,8 +66,8 @@ body {
     margin: 5px;
     padding: 25px;
     background-image: url(https://fastly.picsum.photos/id/1/500/500.jpg?hmac=6vo7WkHURh9CWfdf144ASqEaPNcbj2PHJK3UgGH24lM);
-    opacity: 0.25;
-  } 
+    opacity: 0.65;
+    } 
 
 .robot-eye-left {
  width: 50px;
@@ -121,6 +121,7 @@ body {
       top: -30%;
       left: 40%;
 }
+
 
 .robot-teeth {
     width: 200px;

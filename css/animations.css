@@ -1,0 +1,107 @@
+.robot-ear-left {
+    animation-name: left-ear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes left-ear {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(160deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+.robot-hair-style {
+    animation-name: hair;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hair {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.robot-ear-right {
+    animation: right-ear 20s none infinite alternate 5s;
+    /* animation-name: right-ear;
+    animation-duration: 20s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s; */
+}
+
+@keyframes right-ear {
+    from {
+        width: 100px;
+        height: 200px;
+        border-radius: 50px/100px;
+}
+    to {
+        width: 400px;
+        height: 800px;
+        border-radius: 200px/400px;
+    }
+}
+
+.robot-tooth {
+    animation: tooth 10s infinite linear;
+
+}
+
+@keyframes tooth {
+    0% {
+        top: 0;
+        left: 110px;
+    }
+    20% {
+        top: 0;
+        left: 175px;
+    }
+    40% {
+        top: 25px;
+        left: 175px;
+    }
+    60% {
+        top: 25px;
+        left: 0;
+    }
+    80% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 110px;
+    }
+
+}
+
+.robot-nose:hover {
+    animation: nose 2s infinite alternate;
+
+}
+
+@keyframes nose {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
