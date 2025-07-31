@@ -34,13 +34,13 @@
 }
 
 .robot-ear-right {
-    animation: right-ear 20s none infinite alternate 5s;
+    animation: right-ear 10s none infinite alternate 2s;
     /* animation-name: right-ear;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-fill-mode: none;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 5s; */
+    animation-delay: 2s; */
 }
 
 @keyframes right-ear {
@@ -89,12 +89,13 @@
 
 }
 
-.robot-nose:hover {
-    animation: nose 2s infinite alternate;
+.robot-eye-right:hover,
+.robot-eye-left:hover {
+    animation: eyes 2s infinite alternate;
 
 }
 
-@keyframes nose {
+@keyframes eyes {
     0% {
         transform: scale(1);
     }
@@ -103,5 +104,30 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+.robot-nose {
+    animation-name: nose; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+@keyframes nose {
+    from {
+        width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+    } 
+    to {
+        width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blueviolet;
     }
 }
